@@ -1,0 +1,100 @@
+>06-08 16:56:24 cost_ladder     INFO     * GFLOP/s vs your device peak = MFU. Far below ~30-50%? You're memory/IO bound.
+>06-08 16:56:24 cost_ladder     INFO     * train GFLOP ~= 3x fwd (backward is ~2x forward).
+>06-08 16:56:24 cost_ladder     INFO     * accel MB is MPS/CUDA allocator; on CPU it's n/a (memory shows in ΔRSS).
+>06-08 16:58:06 main            DEBUG   This is a debug message.
+>06-08 16:58:06 main            INFO    This is an info message.
+>06-08 16:58:06 main            WARNING This is a warning message.
+>06-08 16:58:07 cost_ladder     INFO    Running on Darwin 24.6.0 with 25.8 GB RAM
+>06-08 16:58:07 cost_ladder     INFO    device = mps   dtype = torch.float32   machine = arm64   torch = 2.10.0
+>06-08 16:58:07 cost_ladder     INFO    ================================================================================
+>06-08 16:58:07 cost_ladder     INFO    Hardware / Runtime
+>06-08 16:58:07 cost_ladder     INFO    ================================================================================
+>06-08 16:58:07 cost_ladder     INFO    machine              = arm64
+>06-08 16:58:07 cost_ladder     INFO    processor            = arm
+>06-08 16:58:07 cost_ladder     INFO    platform             = macOS-15.7.7-arm64-arm-64bit
+>06-08 16:58:07 cost_ladder     INFO    python               = 3.12.0
+>06-08 16:58:07 cost_ladder     INFO    torch                = 2.10.0
+>06-08 16:58:07 cost_ladder     INFO    macOS                = 15.7.7
+>06-08 16:58:07 cost_ladder     INFO    chip                 = Apple M3
+>06-08 16:58:07 cost_ladder     INFO    CPU cores            = 8 physical / 8 logical
+>06-08 16:58:07 cost_ladder     INFO    RAM total            = 24.00 GiB
+>06-08 16:58:07 cost_ladder     INFO    RAM available        = 8.78 GiB
+>06-08 16:58:07 cost_ladder     INFO    CUDA available       = False
+>06-08 16:58:07 cost_ladder     INFO    MPS available        = True
+>06-08 16:58:07 cost_ladder     INFO    MPS built            = True
+>06-08 16:58:07 cost_ladder     INFO    accelerator          = Apple GPU via MPS
+>06-08 16:58:07 cost_ladder     INFO    MPS allocated        = 0.00 MB
+>06-08 16:58:07 cost_ladder     INFO    MPS driver allocated = 0.45 MB
+>06-08 16:58:07 cost_ladder     INFO    OMP_NUM_THREADS      = unset
+>06-08 16:58:07 cost_ladder     INFO    MKL_NUM_THREADS      = unset
+>06-08 16:58:07 cost_ladder     INFO    VECLIB_MAXIMUM_THREADS= unset
+>06-08 16:58:07 cost_ladder     INFO    PYTORCH_ENABLE_MPS_FALLBACK= unset
+>06-08 16:58:07 cost_ladder     INFO    ================================================================================
+>06-08 16:58:07 cost_ladder     DEBUG   event                                                           rss_mb     delta_rss        accel_mb
+>06-08 16:58:07 cost_ladder     DEBUG   ----------------------------------------------------------------------------------------------------
+>06-08 16:58:07 cost_ladder     DEBUG   Before building small MLP (3 linear)                            211.45           n/a            0.00
+>06-08 16:58:07 cost_ladder     DEBUG   After building small MLP (3 linear)                             245.81        +34.36            0.00
+>06-08 16:58:07 cost_ladder     DEBUG   After making input on mps:0                                     245.83        +34.37            2.10
+>06-08 16:58:07 cost_ladder     DEBUG   After moving model to mps                                       246.55        +35.09           35.67
+>06-08 16:58:07 cost_ladder     DEBUG   After moving inputs to mps                                      246.55        +35.09           35.67
+>06-08 16:58:07 cost_ladder     DEBUG   After one inference pass                                        248.28        +36.83           35.67
+>06-08 16:58:07 cost_ladder     DEBUG   Expected raw parameter memory: 32.02 MB
+>06-08 16:58:07 cost_ladder     DEBUG   One inference pass changed RSS by +1.74 MB and accelerator memory by +0.00 MB
+>06-08 16:58:07 cost_ladder     DEBUG   Before building large LSTM (2 layers)                           248.28           n/a           35.67
+>06-08 16:58:07 cost_ladder     DEBUG   After building large LSTM (2 layers)                            283.98        +35.70            0.00
+>06-08 16:58:07 cost_ladder     DEBUG   After making input on mps:0                                     284.93        +36.65           33.55
+>06-08 16:58:07 cost_ladder     DEBUG   After moving model to mps                                       284.93        +36.65           97.54
+>06-08 16:58:07 cost_ladder     DEBUG   After moving inputs to mps                                      284.93        +36.65           97.54
+>06-08 16:58:10 cost_ladder     DEBUG   After one inference pass                                        291.77        +43.48           97.54
+>06-08 16:58:10 cost_ladder     DEBUG   Expected raw parameter memory: 58.06 MB
+>06-08 16:58:10 cost_ladder     DEBUG   One inference pass changed RSS by +6.83 MB and accelerator memory by +0.00 MB
+>06-08 16:58:10 cost_ladder     INFO    model                     params        fwd GFLOP    fwd ms     GFLOP/s    train ms    ΔRSS MB    accel MB 
+>06-08 16:58:10 cost_ladder     INFO    -------------------------------------------------------------------------------------------------------------
+>06-08 16:58:10 cost_ladder     INFO    small MLP (3 linear)      8.39M         4.295        2.27       1894.2     nan         37         36       
+>06-08 16:58:10 cost_ladder     INFO    large LSTM (2 layers)     15.22M        249.108      132.51     1879.9     nan         43         98       
+>06-08 16:58:10 cost_ladder     INFO    Notes:
+>06-08 16:58:10 cost_ladder     INFO     * GFLOP/s vs your device peak = MFU. Far below ~30-50%? You're memory/IO bound.
+>06-08 16:58:10 cost_ladder     INFO     * train GFLOP ~= 3x fwd (backward is ~2x forward).
+>06-08 16:58:10 cost_ladder     INFO     * accel MB is MPS/CUDA allocator; on CPU it's n/a (memory shows in ΔRSS).
+>06-08 17:01:29 main            DEBUG   This is a debug message.
+>06-08 17:01:29 main            INFO    This is an info message.
+>06-08 17:01:29 main            WARNING This is a warning message.
+>06-08 17:01:30 cost_ladder     INFO    Running on Darwin 24.6.0 with 25.8 GB RAM
+>06-08 17:01:30 cost_ladder     INFO    device = mps   dtype = torch.float32   machine = arm64   torch = 2.10.0
+>06-08 17:01:30 cost_ladder     INFO    ================================================================================
+>06-08 17:01:30 cost_ladder     INFO    Hardware / Runtime
+>06-08 17:01:30 cost_ladder     INFO    ================================================================================
+>06-08 17:01:30 cost_ladder     INFO    machine              = arm64
+>06-08 17:01:30 cost_ladder     INFO    processor            = arm
+>06-08 17:01:30 cost_ladder     INFO    platform             = macOS-15.7.7-arm64-arm-64bit
+>06-08 17:01:30 cost_ladder     INFO    python               = 3.12.0
+>06-08 17:01:30 cost_ladder     INFO    torch                = 2.10.0
+>06-08 17:01:30 cost_ladder     INFO    macOS                = 15.7.7
+>06-08 17:01:30 cost_ladder     INFO    chip                 = Apple M3
+>06-08 17:01:30 cost_ladder     INFO    CPU cores            = 8 physical / 8 logical
+>06-08 17:01:30 cost_ladder     INFO    RAM total            = 24.00 GiB
+>06-08 17:01:30 cost_ladder     INFO    RAM available        = 8.54 GiB
+>06-08 17:01:30 cost_ladder     INFO    CUDA available       = False
+>06-08 17:01:30 cost_ladder     INFO    MPS available        = True
+>06-08 17:01:30 cost_ladder     INFO    MPS built            = True
+>06-08 17:01:30 cost_ladder     INFO    accelerator          = Apple GPU via MPS
+>06-08 17:01:30 cost_ladder     INFO    MPS allocated        = 0.00 MB
+>06-08 17:01:30 cost_ladder     INFO    MPS driver allocated = 0.45 MB
+>06-08 17:01:30 cost_ladder     INFO    OMP_NUM_THREADS      = unset
+>06-08 17:01:30 cost_ladder     INFO    MKL_NUM_THREADS      = unset
+>06-08 17:01:30 cost_ladder     INFO    VECLIB_MAXIMUM_THREADS= unset
+>06-08 17:01:30 cost_ladder     INFO    PYTORCH_ENABLE_MPS_FALLBACK= unset
+>06-08 17:01:30 cost_ladder     INFO    ================================================================================
+>06-08 17:01:30 cost_ladder     DEBUG   event                                                           rss_mb     delta_rss        accel_mb
+>06-08 17:01:30 cost_ladder     DEBUG   ----------------------------------------------------------------------------------------------------
+>06-08 17:01:30 cost_ladder     DEBUG   Before building small MLP (3 linear)                            211.81           n/a            0.00
+>06-08 17:01:30 cost_ladder     DEBUG   After building small MLP (3 linear)                             246.17        +34.36            0.00
+>06-08 17:01:30 cost_ladder     DEBUG   input x: shape=(256, 1024), dtype=torch.float32, numel=262,144, element_size=4 B, raw_size=1.00 MiB
+>06-08 17:01:30 cost_ladder     DEBUG   After making input on mps:0                                     246.17        +34.36            2.10
+>06-08 17:01:30 cost_ladder     DEBUG   After moving model to mps                                       246.87        +35.06           35.67
+>06-08 17:01:30 cost_ladder     DEBUG   After moving inputs to mps                                      246.87        +35.06           35.67
+>06-08 17:01:30 cost_ladder     DEBUG   After one inference pass                                        248.45        +36.63           35.67
+>06-08 17:01:30 cost_ladder     DEBUG   Expected raw parameter memory: 32.02 MB
+>06-08 17:01:30 cost_ladder     DEBUG   One inference pass changed RSS by +1.57 MB and accelerator memory by +0.00 MB
+>06-08 17:01:30 cost_ladder     DEBUG   Before building large LSTM (2 layers)                           248.45           n/a           35.67
+>06-08 17:01:30 cost_ladder     DEBUG   After building large LSTM (2 layers)                            284.15        +35.70            0.00
