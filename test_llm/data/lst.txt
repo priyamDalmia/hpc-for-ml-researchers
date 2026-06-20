@@ -1,0 +1,7 @@
+total 152K
+drwxrwxr-x. 2 u26320022 u26320022   25 Jun 20 17:27 data
+-rw-rw-r--. 1 u26320022 u26320022 5.6K Jun 20 17:21 hello_hpc.py
+-rw-rw-r--. 1 u26320022 u26320022 1.1K Jun 20 17:23 sample_job.sh
+-rw-------. 1 u26320022 u26320022   84 Jun 20 17:20 sample_job.sh.o3776
+-rw-------. 1 u26320022 u26320022   84 Jun 20 17:22 sample_job.sh.o3777
+-rw-------. 1 u26320022 u26320022   52 Jun 20 17:24 sample_job.sh.o3778

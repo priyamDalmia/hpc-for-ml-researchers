@@ -1,0 +1,122 @@
+
+========== SHELL / FILESYSTEM ==========
+USER          : u26320022
+HOME          : /shared/homes/u26320022
+PWD (now)     : /shared/homes/u26320022
+PWD (after cd): /shared/homes/u26320022/projects/test_llm
+
+========== JOB START ==========
+date          : 2026-06-21T08:02:46+10:00
+hostname      : hpc-exec02.hpc.uts.edu.au
+running as    : u26320022
+shell PID     : 700383
+
+========== PBS ENVIRONMENT ==========
+PBS_JOBID     : 3822.hpc-head01
+PBS_JOBNAME   : test_hf.sh
+PBS_QUEUE     : workq
+PBS_O_HOST    : hpc-login01.hpc.uts.edu.au     # host you submitted from
+PBS_O_WORKDIR : /shared/homes/u26320022/projects/test_llm  # dir you submitted from
+PBS_O_LOGNAME : u26320022
+PBS_NODEFILE  : /var/spool/pbs/aux/3822.hpc-head01
+NCPUS         : 1
+Nodes allocated to this job:
+  hpc-exec02.hpc.uts.edu.au
+
+========== HARDWARE VISIBLE TO THIS JOB ==========
+nproc (allocated CPUs) : 1
+nproc --all (node total): 24
+
+CPU model:
+  Thread(s) per core:  1
+  Core(s) per socket:  12
+  Socket(s):           2
+  Model name:          Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+
+Memory (free -h):
+                total        used        free      shared  buff/cache   available
+  Mem:          187Gi        13Gi       6.6Gi        69Mi       166Gi       171Gi
+  Swap:         8.0Gi        21Mi       8.0Gi
+
+Disk (df -h on key paths):
+  Filesystem                 Size  Used Avail Use% Mounted on
+  10.37.24.191:/cetus_homes  1.0T  8.3G 1016G   1% /shared/homes
+  /dev/sdb1                  6.6T   54G  6.5T   1% /scratch
+
+========== JOB SUMMARY END ==========
+date          : 2026-06-21T08:02:46+10:00
+
+---------- PYTHON INTERPRETER ----------
+  executable            : /shared/homes/u26320022/.local/bin/python3
+  version               : 3.12.13 (main, Apr 16 2026, 22:51:04) [GCC 8.5.0 20210514 (Red Hat 8.5.0-28)]
+  implementation        : CPython
+  prefix                : /usr
+  base_prefix           : /usr
+  in_venv               : False
+  sys.path entries      : 6
+      - /shared/homes/u26320022/projects/test_llm
+      - /usr/lib64/python312.zip
+      - /usr/lib64/python3.12
+      - /usr/lib64/python3.12/lib-dynload
+      - /usr/lib64/python3.12/site-packages
+      - /usr/lib/python3.12/site-packages
+
+---------- PLATFORM ----------
+  hostname              : hpc-exec02.hpc.uts.edu.au
+  FQDN                  : hpc-exec02.hpc.uts.edu.au
+  platform              : Linux-4.18.0-553.126.1.el8_10.x86_64-x86_64-with-glibc2.28
+  machine               : x86_64
+  processor             : x86_64
+  python compiler       : GCC 8.5.0 20210514 (Red Hat 8.5.0-28)
+
+---------- CPU VISIBILITY ----------
+  os.cpu_count() (node) : 24
+  sched_getaffinity (job): 24
+  $NCPUS (PBS)          : 1
+
+---------- PATHS ----------
+  cwd                   : /shared/homes/u26320022/projects/test_llm
+  home                  : /shared/homes/u26320022
+
+---------- KEY ENVIRONMENT VARIABLES ----------
+  HF_DATASETS_CACHE     : /datasets
+  HF_HUB_CACHE          : /hub
+  HOME                  : /shared/homes/u26320022
+  LANG                  : en_AU.UTF-8
+  OMP_NUM_THREADS       : 1
+  PBS_ENVIRONMENT       : PBS_BATCH
+  PBS_JOBCOOKIE         : 63E0DE0E7971A3613A9793A23DC260AA
+  PBS_JOBDIR            : /shared/homes/u26320022
+  PBS_JOBID             : 3822.hpc-head01
+  PBS_JOBNAME           : test_hf.sh
+  PBS_MOMPORT           : 15003
+  PBS_NODEFILE          : /var/spool/pbs/aux/3822.hpc-head01
+  PBS_NODENUM           : 0
+  PBS_O_HOME            : /shared/homes/u26320022
+  PBS_O_HOST            : hpc-login01.hpc.uts.edu.au
+  PBS_O_INTERACTIVE_AUTH_METHOD: resvport
+  PBS_O_LANG            : en_US.UTF-8
+  PBS_O_LOGNAME         : u26320022
+  PBS_O_MAIL            : /var/spool/mail/u26320022
+  PBS_O_PATH            : /shared/homes/u26320022/.vscode-server/cli/servers/Stable-fcf604774b9f2674b473065736ee75077e256353/server/bin/remote-...
+  PBS_O_QUEUE           : workq
+  PBS_O_SHELL           : /bin/bash
+  PBS_O_SYSTEM          : Linux
+  PBS_O_WORKDIR         : /shared/homes/u26320022/projects/test_llm
+  PBS_QUEUE             : workq
+  PBS_TASKNUM           : 1
+  PBS_TZID              : Australia/Sydney
+  SHELL                 : /bin/bash
+  USER                  : u26320022
+
+---------- LIBRARY VERSIONS (best effort) ----------
+
+---------- GPU / CUDA (via PyTorch if present) ----------
+  torch                 : not installed
+
+Summary finished in -0.008s.
+
+========== PYTHON LAUNCH ==========
+python binary : /shared/homes/u26320022/.local/bin/python3
+python version: Python 3.12.13
+/var/spool/pbs/mom_priv/jobs/3822.hpc-head01.SC: line 67: activate: command not found

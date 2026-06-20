@@ -1,0 +1,56 @@
+
+========== JOB START ==========
+date          : 2026-06-21T08:15:26+10:00
+hostname      : hpc-exec02.hpc.uts.edu.au
+running as    : u26320022
+shell PID     : 700421
+
+========== SHELL / FILESYSTEM ==========
+USER          : u26320022
+HOME          : /shared/homes/u26320022
+PWD (now)     : /shared/homes/u26320022
+PWD (after cd): /shared/homes/u26320022/projects/test_llm
+
+========== PBS ENVIRONMENT ==========
+PBS_JOBID     : 3823.hpc-head01
+PBS_JOBNAME   : test_hf.sh
+PBS_QUEUE     : workq
+PBS_O_HOST    : hpc-login01.hpc.uts.edu.au     # host you submitted from
+PBS_O_WORKDIR : /shared/homes/u26320022/projects/test_llm  # dir you submitted from
+PBS_O_LOGNAME : u26320022
+PBS_NODEFILE  : /var/spool/pbs/aux/3823.hpc-head01
+NCPUS         : 1
+Nodes allocated to this job:
+  hpc-exec02.hpc.uts.edu.au
+
+========== HARDWARE VISIBLE TO THIS JOB ==========
+nproc (allocated CPUs) : 1
+nproc --all (node total): 24
+
+CPU model:
+  Thread(s) per core:  1
+  Core(s) per socket:  12
+  Socket(s):           2
+  Model name:          Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+
+Memory (free -h):
+                total        used        free      shared  buff/cache   available
+  Mem:          187Gi        13Gi       6.6Gi        69Mi       166Gi       171Gi
+  Swap:         8.0Gi        21Mi       8.0Gi
+
+Disk (df -h on key paths):
+  Filesystem                 Size  Used Avail Use% Mounted on
+  10.37.24.191:/cetus_homes  1.0T  8.3G 1016G   1% /shared/homes
+  /dev/sdb1                  6.6T   54G  6.5T   1% /scratch
+
+========== SETUP ==========
+date          : 2026-06-21T08:15:26+10:00
+python binary : /shared/homes/u26320022/.local/bin/python3
+python version: Python 3.12.13
+
+========== MAIN ==========
+Traceback (most recent call last):
+  File "/shared/homes/u26320022/projects/test_llm/10_numbers.py", line 4, in <module>
+    import pandas 
+    ^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pandas'

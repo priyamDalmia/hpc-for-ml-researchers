@@ -1,0 +1,6 @@
+
+========== SHELL / FILESYSTEM ==========
+USER          : u26320022
+HOME          : /shared/homes/u26320022
+PWD (now)     : /shared/homes/u26320022
+/var/spool/pbs/mom_priv/jobs/3819.hpc-head01.SC: line 30: ./job_summary.sh: No such file or directory
